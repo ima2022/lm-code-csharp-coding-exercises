@@ -14,7 +14,7 @@ namespace Exercises.Tests
         }
 
         [Test]
-        public void Given_Chocolate_Chip_GetIceCreamCode_Should_Return_Correct_Ice_Cream_Code()
+        public void Given_Mint_Chocolate_Chip_GetIceCreamCode_Should_Return_Correct_Ice_Cream_Code()
         {
             string iceCreamFlavour = "Mint Chocolate Chip";
             int expectedCode = 3;

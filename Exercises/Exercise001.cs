@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Exercises.Models;
+using System.Linq;
 
 namespace Exercises
 {
@@ -8,32 +9,28 @@ namespace Exercises
     {
         public string CapitalizeWord(string word)
         {
-            // Replace the exception statement below with your code!
-            throw new NotImplementedException();
+            return char.ToUpper(word[0]) + word.Substring(1);
         }
-
         public string GenerateInitials(string firstName, string lastName)
         {
-            // Replace the exception statement below with your code!
-            throw new NotImplementedException();
+            return char.ToUpper(firstName[0]) + "." + char.ToUpper(lastName[0]);
         }
 
         public double AddVat(double originalPrice, double vatRate)
         {
-            // Replace the exception statement below with your code!
-            throw new NotImplementedException();
+            return Math.Round(originalPrice * vatRate * 0.01 + originalPrice, 2);
         }
 
         public string Reverse(string sentence)
         {
-            // Replace the exception statement below with your code!
-            throw new NotImplementedException();
+            char[] charArray = sentence.ToCharArray();
+            Array.Reverse(charArray);
+            return new string(charArray);
         }
 
         public int CountLinuxUsers(List<User> users)
         {
-            // Replace the exception statement below with your code!
-            throw new NotImplementedException();
+            return users.Where(u => u.Type == "Linux").Count();
         }
     }
 }

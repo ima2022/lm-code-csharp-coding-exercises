@@ -1,12 +1,17 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+
 namespace Exercises
 {
     public class Exercise003
     {
-        // Replace the exception statement below with your code!
-        public string[] IceCreamFlavours => throw new NotImplementedException();
-
-        // Replace the exception statement below with your code!
-        public int IceCreamCode(string iceCreamFlavour) => throw new NotImplementedException();
+        public string[] IceCreamFlavours => new string [] {"Pistachio", "Raspberry Ripple", "Vanilla", "Mint Chocolate Chip", "Chocolate", "Mango Sorbet" };
+        public int IceCreamCode(string IceCreamFlavour) => Array.IndexOf(IceCreamFlavours, IceCreamFlavours);
     }
+    
 }
+       
+   
+
